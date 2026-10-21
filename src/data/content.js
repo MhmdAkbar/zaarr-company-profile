@@ -1,8 +1,8 @@
-// Sumber copy: https://zaar-mocha.vercel.app/ (diambil apa adanya, jangan diubah/diperbaiki)
+// Sumber copy: https://zaar-mocha.vercel.app/ (dikoreksi ejaan brand menjadi Zaarr / ZAARR sesuai instruksi pemilik project, path aset tetap)
 
 export const site = {
-  title: 'Zaar - Integrated Solutions',
-  logo: { src: '/Resources/Image/logo-zaar.png', alt: 'Zaar Logo', href: '#' },
+  title: 'Zaarr - Integrated Solutions',
+  logo: { src: '/Resources/Image/logo-zaar.png', alt: 'Zaarr Logo', href: '#' },
 }
 
 export const navLinks = [
@@ -18,7 +18,7 @@ export const hero = {
   titleLines: ['Digital Transformation.', 'Simplified.'],
   // Tagline: baris 1 + line break + baris 2
   taglineLines: [
-    'Zaar is a one-stop solution integrator.',
+    'Zaarr is a one-stop solution integrator.',
     'Integrated | Scalable | Efficiency | Measurable | Secured.',
   ],
   cta: { label: 'Discover Solutions', href: '#products' },
@@ -26,7 +26,7 @@ export const hero = {
 
 export const about = {
   id: 'about',
-  title: 'About ZAAR.',
+  title: 'About ZAARR.',
   text: "We create bespoke platforms to transform an organization's physical operations into intuitive data-driven operations with real-time situational awareness. Our management team brings over 20 years of industry experience to address and resolve growing pain points in the security world.",
 }
 
@@ -59,19 +59,19 @@ export const products = {
   ],
   items: [
     {
-      title: 'Zaar Unified Platform',
+      title: 'Zaarr Unified Platform',
       text: 'Open architecture engine integrating sub-systems from across security and energy.',
-      image: { src: '/Resources/Image/unified.png', alt: 'Zaar Unified Platform' },
+      image: { src: '/Resources/Image/unified.png', alt: 'Zaarr Unified Platform' },
     },
     {
-      title: 'Zaar iMOPS™',
+      title: 'Zaarr iMOPS™',
       text: 'Manage incidents, verify data sources, and trigger automated workflows efficiently.',
-      image: { src: '/Resources/Image/imops.png', alt: 'Zaar i-MOPSTM' },
+      image: { src: '/Resources/Image/imops.png', alt: 'Zaarr i-MOPSTM' },
     },
     {
-      title: 'Zaar SmartPatrol',
+      title: 'Zaarr SmartPatrol',
       text: 'Smart guard patrolling features with real-time monitoring and SOS alarm.',
-      image: { src: '/Resources/Image/product-patrol.png', alt: 'Zaar SmartPatrol' },
+      image: { src: '/Resources/Image/product-patrol.png', alt: 'Zaarr SmartPatrol' },
     },
     {
       title: 'Cyber Security',
@@ -88,7 +88,7 @@ export const products = {
 }
 
 export const footer = {
-  brand: 'Zaar.',
+  brand: 'Zaarr.',
   tagline: 'Headquartered in Indonesia • Dedicated to SMART goals.',
-  copyright: '© 2026 Zaar. All rights reserved.',
+  copyright: '© 2026 Zaarr. All rights reserved.',
 }
