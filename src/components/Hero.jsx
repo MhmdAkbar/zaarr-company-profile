@@ -12,7 +12,7 @@ export default function Hero() {
 
       <div className="hero-overlay"></div>
 
-      <div className="container hero-content">
+      <div className="container position-relative z-1 hero-content">
         <h1 className="hero-title">
           {hero.titleLines.map((line, i) => (
             <Fragment key={line}>

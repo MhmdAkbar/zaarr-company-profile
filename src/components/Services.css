@@ -31,7 +31,7 @@
 @media (min-width: 768px) {
   .services-col {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: calc(100% / 3);
   }
 }
 
@@ -78,11 +78,15 @@
   content: '\f8a7';
 }
 
+.text-zaar-green,
+.service-icon {
+  color: var(--color-primary) !important;
+}
+
 .service-icon {
   display: block;
   margin-bottom: 1rem;
   font-size: calc(1.375rem + 1.5vw);
-  color: var(--color-primary) !important;
 }
 
 @media (min-width: 1200px) {
