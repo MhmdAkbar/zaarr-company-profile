@@ -28,7 +28,7 @@
   --color-border-card: #f0f0f0;
   --gradient-product-hover: linear-gradient(
     to top,
-    rgba(52, 199, 89, 0.75),
+    rgba(52, 199, 89, 0.12),
     rgba(52, 199, 89, 0)
   );
 
@@ -72,11 +72,11 @@
   --radius-product: 24px;
   --radius-btn: 980px;
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.03);
-  --shadow-card-hover: 0 10px 30px rgba(0, 0, 0, 0.06);
-  --shadow-product-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+  --shadow-card-hover: 0 6px 24px rgba(0, 0, 0, 0.05);
+  --shadow-product-hover: 0 10px 28px rgba(0, 0, 0, 0.07);
   --transition-fast: 0.15s ease-in-out;
   --transition-base: 0.3s ease;
-  --transition-product: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-    box-shadow 0.4s ease;
-  --transition-gradient: opacity 0.5s ease;
+  --transition-product: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 0.35s ease;
+  --transition-gradient: opacity 0.35s ease;
 }

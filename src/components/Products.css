@@ -64,7 +64,7 @@
 }
 
 .apple-product-grid:hover {
-  transform: translateY(-12px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-product-hover);
 }
 
@@ -106,7 +106,8 @@
   padding: 6px 16px;
   font-size: var(--font-size-btn-product);
   text-decoration: none;
-  transition: all var(--transition-base);
+  transition: background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 .btn-product-secondary {
@@ -117,7 +118,9 @@
   padding: 6px 16px;
   font-size: var(--font-size-btn-product);
   text-decoration: none;
-  transition: all var(--transition-base);
+  transition: background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base);
 }
 
 .dark-theme .btn-product-secondary {
@@ -131,8 +134,13 @@
 }
 
 .btn-product-secondary:hover {
-  background-color: var(--color-primary);
-  color: var(--color-primary-contrast);
+  background-color: rgba(52, 199, 89, 0.12);
+  color: var(--color-primary);
+}
+
+.dark-theme .btn-product-secondary:hover {
+  background-color: rgba(48, 209, 88, 0.15);
+  color: var(--color-primary-dark);
 }
 
 .product-img-wrapper {

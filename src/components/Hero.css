@@ -57,7 +57,8 @@
   font-size: var(--font-size-btn-hero);
   font-weight: var(--font-weight-medium);
   text-decoration: none;
-  transition: all var(--transition-base);
+  transition: background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 .btn-apple:hover {
