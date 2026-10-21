@@ -84,6 +84,19 @@ Sesuai instruksi pemilik project, ejaan nama perusahaan pada teks UI diperbaiki 
 
 ---
 
+## Kompresi Video Hero (`42MB` → `12MB`)
+
+Atas permintaan langsung pemilik project, keputusan di `AGENTS.md` bagian 6 ("Video besar: Biarkan apa adanya, jangan kompres") **dikesampingkan** khusus untuk optimasi ukuran video hero:
+- **File target**: `public/Resources/Video/0706.mp4` (nama file dan path tetap persis sama, tidak ada perubahan kode komponen).
+- **Perubahan ukuran**: Dari **42 MB** (`43,037,518` bytes) menjadi **12 MB** (`11,569,771` bytes / `~11.03 MiB`).
+- **Parameter kompresi & hasil verifikasi `ffprobe`**:
+  - Codec: `H.264 / AVC` (`libx264`, High profile, level 4.0, `yuv420p`, **CRF 30**)
+  - Resolusi & Frame Rate: `1920x1080` (1080p, `16:9`), `30 fps`, durasi `55.63s` (`1669` frames), bitrate `~1.66 Mbps`
+  - Audio: **Tanpa stream audio** (`nb_streams=1`, hanya video karena di Hero selalu `muted`)
+  - Container flags: MP4 dengan `+faststart` (`moov` atom di awal file untuk pemutaran streaming instan)
+
+---
+
 ## Deploy manual (Step 10)
 
 Pemeriksaan `npx vercel whoami` menunjukkan status `> Logged out.` di lingkungan ini. Repository sudah siap di-push (commit bersih, `.gitignore` mengecualikan `node_modules`, `dist`, `.vercel`, `reference/`).
@@ -120,4 +133,5 @@ Langkah-langkah deploy manual ke Vercel:
 8. `b4a0de2` — `fix: match original at all breakpoints`
 9. `8f5814b` — `docs: add manual deploy steps and final report in NOTES.md`
 10. `6635790` — `style: refine hover effects to be calmer and smoother`
-11. Checkpoint commit — `checkpoint: tone down hover effects and fix ZAARR brand spelling`
+11. `5b3b8de` — `checkpoint: tone down hover effects and fix ZAARR brand spelling`
+12. Checkpoint commit — `checkpoint: compress hero video 42MB to 12MB`
