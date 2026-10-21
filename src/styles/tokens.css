@@ -1,0 +1,38 @@
+/*
+  DESIGN TOKENS — Zaar
+  PLACEHOLDER: nilai di bawah BELUM diekstrak dari situs asli.
+  Jalankan scripts/extract-tokens.js di DevTools situs asli,
+  lalu ganti semua nilai bertanda TODO.
+*/
+:root {
+  /* Colors */
+  --color-bg: #ffffff;            /* TODO */
+  --color-surface: #f5f5f5;       /* TODO */
+  --color-text: #111111;          /* TODO */
+  --color-text-muted: #555555;    /* TODO */
+  --color-primary: #0a58ca;       /* TODO */
+  --color-primary-contrast: #ffffff; /* TODO */
+  --color-overlay: rgba(0, 0, 0, 0.5); /* TODO: overlay di atas video hero */
+  --color-footer-bg: #111111;     /* TODO */
+
+  /* Typography */
+  --font-body: system-ui, sans-serif;    /* TODO */
+  --font-heading: system-ui, sans-serif; /* TODO */
+  --font-size-body: 1rem;         /* TODO */
+  --font-size-h1: 3rem;           /* TODO */
+  --font-size-h2: 2rem;           /* TODO */
+  --font-size-h3: 1.5rem;         /* TODO */
+  --font-weight-heading: 700;     /* TODO */
+  --line-height-body: 1.6;        /* TODO */
+
+  /* Layout */
+  --container-max: 1200px;        /* TODO */
+  --section-padding-y: 5rem;      /* TODO */
+  --nav-height: 4rem;             /* TODO */
+
+  /* Shape */
+  --radius-sm: 4px;               /* TODO */
+  --radius-md: 8px;               /* TODO */
+  --radius-btn: 999px;            /* TODO */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1); /* TODO */
+}
