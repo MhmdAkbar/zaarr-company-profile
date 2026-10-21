@@ -1,38 +1,82 @@
-/*
-  DESIGN TOKENS — Zaar
-  PLACEHOLDER: nilai di bawah BELUM diekstrak dari situs asli.
-  Jalankan scripts/extract-tokens.js di DevTools situs asli,
-  lalu ganti semua nilai bertanda TODO.
-*/
+@font-face {
+  font-display: block;
+  font-family: "bootstrap-icons";
+  src: url("/fonts/bootstrap-icons.woff2") format("woff2");
+}
+
 :root {
   /* Colors */
-  --color-bg: #ffffff;            /* TODO */
-  --color-surface: #f5f5f5;       /* TODO */
-  --color-text: #111111;          /* TODO */
-  --color-text-muted: #555555;    /* TODO */
-  --color-primary: #0a58ca;       /* TODO */
-  --color-primary-contrast: #ffffff; /* TODO */
-  --color-overlay: rgba(0, 0, 0, 0.5); /* TODO: overlay di atas video hero */
-  --color-footer-bg: #111111;     /* TODO */
+  --color-bg: #fbfbfd;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f5f5f7;
+  --color-dark: #000000;
+  --color-text: #1d1d1f;
+  --color-text-light: #f5f5f7;
+  --color-text-muted: #6c757d;
+  --color-text-footer: #86868b;
+  --color-text-footer-brand: #212529;
+  --color-nav-link: rgba(0, 0, 0, 0.65);
+  --color-nav-link-hover: rgba(0, 0, 0, 0.8);
+  --color-primary: #34c759;
+  --color-primary-hover: #2eb350;
+  --color-primary-dark: #30d158;
+  --color-primary-contrast: #ffffff;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-nav-bg: rgba(255, 255, 255, 0.8);
+  --color-footer-bg: #f5f5f7;
+  --color-border-light: #f8f9fa;
+  --color-border-card: #f0f0f0;
+  --gradient-product-hover: linear-gradient(
+    to top,
+    rgba(52, 199, 89, 0.75),
+    rgba(52, 199, 89, 0)
+  );
 
   /* Typography */
-  --font-body: system-ui, sans-serif;    /* TODO */
-  --font-heading: system-ui, sans-serif; /* TODO */
-  --font-size-body: 1rem;         /* TODO */
-  --font-size-h1: 3rem;           /* TODO */
-  --font-size-h2: 2rem;           /* TODO */
-  --font-size-h3: 1.5rem;         /* TODO */
-  --font-weight-heading: 700;     /* TODO */
-  --line-height-body: 1.6;        /* TODO */
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-size-body: 1rem;
+  --font-size-hero-title: 3.8rem;
+  --font-size-hero-subtitle: 1.4rem;
+  --font-size-section-title: 2.5rem;
+  --font-size-product-title: 2.5rem;
+  --font-size-product-text: 1.1rem;
+  --font-size-card-title: 1.5rem;
+  --font-size-lead: 1.5rem;
+  --font-size-footer-brand: 1.25rem;
+  --font-size-footer: 0.875rem;
+  --font-size-btn-hero: 15px;
+  --font-size-btn-product: 14px;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-heading: 700;
+  --line-height-body: 1.5;
+  --line-height-heading: 1.2;
 
   /* Layout */
-  --container-max: 1200px;        /* TODO */
-  --section-padding-y: 5rem;      /* TODO */
-  --nav-height: 4rem;             /* TODO */
+  --container-max: 1140px;
+  --container-padding-x: 0.75rem;
+  --section-padding-y: 3rem;
+  --nav-height: 62px;
+  --hero-padding-top: 160px;
+  --hero-padding-bottom: 120px;
+  --product-card-height: 550px;
+  --product-img-height: 300px;
 
-  /* Shape */
-  --radius-sm: 4px;               /* TODO */
-  --radius-md: 8px;               /* TODO */
-  --radius-btn: 999px;            /* TODO */
-  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1); /* TODO */
+  /* Shape & Effects */
+  --radius-card: 20px;
+  --radius-product: 24px;
+  --radius-btn: 980px;
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.03);
+  --shadow-card-hover: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-product-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+  --transition-fast: 0.15s ease-in-out;
+  --transition-base: 0.3s ease;
+  --transition-product: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 0.4s ease;
+  --transition-gradient: opacity 0.5s ease;
 }
