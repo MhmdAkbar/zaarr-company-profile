@@ -1,14 +1,21 @@
+import Navbar from './components/Navbar.jsx'
+import Hero from './components/Hero.jsx'
+import About from './components/About.jsx'
+import Services from './components/Services.jsx'
+import Products from './components/Products.jsx'
+import Footer from './components/Footer.jsx'
+
 export default function App() {
   return (
     <>
-      <header id="top">Navbar</header>
+      <Navbar />
       <main>
-        <section id="hero">Hero</section>
-        <section id="about">About</section>
-        <section id="services">Services</section>
-        <section id="products">Products</section>
+        <Hero />
+        <About />
+        <Services />
+        <Products />
       </main>
-      <footer>Footer</footer>
+      <Footer />
     </>
   )
 }
